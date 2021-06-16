@@ -14,8 +14,7 @@ let destination = document.querySelector("#container");
 
 ReactDOM.render(
     <div>
-        <StarRating style={{backgroundColor: "lightblue"}}
-                    onDoubleClick={e => alert("double click")}/>
+        <StarRating/>
         {/*<MyRating/>*/}
         {/*<TextP textProp={"Hello World"}/>*/}
         {/*<MyCounter/>*/}
