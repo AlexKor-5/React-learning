@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 //CSS
 import "./index.css";
-
+import {MyTrying} from "./MyTrying/MyTrying";
 //Components
 // import TextP from "./afterIndex";
 // import StarRating from "./StarRaing";
@@ -11,8 +11,10 @@ import "./index.css";
 // import App from "./App";
 // import MyApp from "./MyApp/MyApp";
 // import Myform from "./MyForm/Myform";
-import {PeopleApp} from "./People/PeopleApp";
-
+// import {PeopleApp} from "./People/PeopleApp";
+// import {CheckBoxApp} from "./CheckBoxApp/CheckBoxApp";
+// import {PhraseApp} from "./PhraseApp/PhraseApp";
+// import {UseKeyApp} from "./UseKeyApp/UseKeyApp";
 
 
 
@@ -27,7 +29,11 @@ ReactDOM.render(
         {/*<App/>*/}
         {/*<MyApp/>*/}
         {/*<Myform/>*/}
-        <PeopleApp/>
+        {/*<PeopleApp/>*/}
+        {/*<CheckBoxApp></CheckBoxApp>*/}
+        {/*<PhraseApp/>*/}
+        {/*<UseKeyApp/>*/}
+        <MyTrying/>
     </div>,
     destination
 );
