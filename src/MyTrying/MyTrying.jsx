@@ -1,9 +1,4 @@
-import React, {useState, useEffect, useMemo} from "react";
-
-const action = (a = "") => {
-    console.log(a);
-    return a;
-}
+import React, {useState, useEffect, useCallback, useLayoutEffect} from "react";
 
 export const MyTrying = () => {
     const [counter, setCounter] = useState(0);
@@ -17,7 +12,16 @@ export const MyTrying = () => {
         console.log(`secCounter = ${secCounter}`);
     }, [secCounter]);
 
-    let text = useMemo(() => action("Action NOW!!!"), [counter]);
+    let action = useCallback((a) => {
+        console.log(a);
+        return a;
+    }, []);
+
+    let text = action("Action now!!!", counter);
+
+    useLayoutEffect(()=>{
+        console.log('use layout effect');
+    });
 
     return (
         <div>
