@@ -1,11 +1,12 @@
-import React, {useState, memo} from "react";
+import React, {useState, memo, useCallback} from "react";
 
 export const CatsApp = () => {
     const [cats, setCats] = useState(["Biscuit", "Jungle", "Outlaw"]);
+    const meow = useCallback(name => console.log(`${name} has meowed`), []);
     return (
         <>
             {cats.map((name, i) => (
-                <PureCat key={i} name={name} />
+                <PureCat key={i} name={name} meow={meow}/>
             ))}
             <button onClick={() => setCats([...cats, prompt("Name a cat")])}>
                 Add a Cat
@@ -14,9 +15,9 @@ export const CatsApp = () => {
     );
 }
 
-const Cat = ({name}) => {
+const Cat = memo(({name, meow = f => f}) => {
     console.log(`rendering ${name}`);
-    return <p>{name}</p>;
-};
+    return <p onClick={() => meow(name)}>{name}</p>;
+});
 
 const PureCat = memo(Cat);
