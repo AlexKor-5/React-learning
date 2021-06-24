@@ -34,7 +34,7 @@ export const DataFetchApp = () => {
     }
 }
 
-const User = ({name, phone}) =>
+const User = ({name = "", phone=""}) =>
     <div style={{border: "2px solid gold", padding: "20px", margin: "10px"}}>
         <p>{name}</p>
         <p>{phone}</p>

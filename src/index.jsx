@@ -4,7 +4,8 @@ import ReactDOM from "react-dom";
 import "./index.css";
 // import {MyReducerApp} from "./MyReducerApp/MyReducerApp";
 // import {CatsApp} from "./CatsApp/CatsApp";
-import {DataFetchApp} from "./DataFetchApp/DataFetchApp";
+// import {DataFetchApp} from "./DataFetchApp/DataFetchApp";
+import {RenderPropsApp} from "./RenderPropsApp/RenderPropsApp";
 //Components
 // import TextP from "./afterIndex";
 // import StarRating from "./StarRaing";
@@ -39,7 +40,8 @@ ReactDOM.render(
         {/*<MyTrying/>*/}
         {/*<MyReducerApp/>*/}
         {/*<CatsApp/>*/}
-        <DataFetchApp/>
+        {/*<DataFetchApp/>*/}
+        <RenderPropsApp/>
     </div>,
     destination
 );
