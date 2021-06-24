@@ -2,10 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 //CSS
 import "./index.css";
+import {VirtualizedListApp} from "./VirtualizedListApp/VirtualizedListApp";
 // import {MyReducerApp} from "./MyReducerApp/MyReducerApp";
 // import {CatsApp} from "./CatsApp/CatsApp";
 // import {DataFetchApp} from "./DataFetchApp/DataFetchApp";
-import {RenderPropsApp} from "./RenderPropsApp/RenderPropsApp";
+// import {RenderPropsApp} from "./RenderPropsApp/RenderPropsApp";
 //Components
 // import TextP from "./afterIndex";
 // import StarRating from "./StarRaing";
@@ -19,7 +20,6 @@ import {RenderPropsApp} from "./RenderPropsApp/RenderPropsApp";
 // import {PhraseApp} from "./PhraseApp/PhraseApp";
 // import {UseKeyApp} from "./UseKeyApp/UseKeyApp";
 // import {MyTrying} from "./MyTrying/MyTrying";
-
 
 
 let destination = document.querySelector("#container");
@@ -41,7 +41,8 @@ ReactDOM.render(
         {/*<MyReducerApp/>*/}
         {/*<CatsApp/>*/}
         {/*<DataFetchApp/>*/}
-        <RenderPropsApp/>
+        {/*<RenderPropsApp/>*/}
+        <VirtualizedListApp/>
     </div>,
     destination
 );
