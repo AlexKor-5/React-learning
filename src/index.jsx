@@ -3,7 +3,8 @@ import ReactDOM from "react-dom";
 //CSS
 import "./index.css";
 // import {MyReducerApp} from "./MyReducerApp/MyReducerApp";
-import {CatsApp} from "./CatsApp/CatsApp";
+// import {CatsApp} from "./CatsApp/CatsApp";
+import {DataFetchApp} from "./DataFetchApp/DataFetchApp";
 //Components
 // import TextP from "./afterIndex";
 // import StarRating from "./StarRaing";
@@ -37,7 +38,8 @@ ReactDOM.render(
         {/*<UseKeyApp/>*/}
         {/*<MyTrying/>*/}
         {/*<MyReducerApp/>*/}
-        <CatsApp/>
+        {/*<CatsApp/>*/}
+        <DataFetchApp/>
     </div>,
     destination
 );
