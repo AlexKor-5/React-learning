@@ -2,7 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 //CSS
 import "./index.css";
-import {FetchHookApp} from "./FetchHookApp/FetchHookApp";
+// import {FetchHookApp} from "./FetchHookApp/FetchHookApp";
+import {FetchComponentApp} from "./FetchComponentApp/FetchComponentApp";
 // import {VirtualizedListApp} from "./VirtualizedListApp/VirtualizedListApp";
 // import {ReactWindowExampleApp} from "./VirtualizedListApp/ReactWindowExampleApp";
 // import {MyReducerApp} from "./MyReducerApp/MyReducerApp";
@@ -46,7 +47,8 @@ ReactDOM.render(
         {/*<RenderPropsApp/>*/}
         {/*<ReactWindowExampleApp/>*/}
         {/*<VirtualizedListApp/>*/}
-        <FetchHookApp/>
+        {/*<FetchHookApp/>*/}
+        <FetchComponentApp/>
     </div>,
     destination
 );
