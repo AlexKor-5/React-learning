@@ -2,8 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom";
 //CSS
 import "./index.css";
+import {FetchHookApp} from "./FetchHookApp/FetchHookApp";
 // import {VirtualizedListApp} from "./VirtualizedListApp/VirtualizedListApp";
-import {ReactWindowExampleApp} from "./VirtualizedListApp/ReactWindowExampleApp";
+// import {ReactWindowExampleApp} from "./VirtualizedListApp/ReactWindowExampleApp";
 // import {MyReducerApp} from "./MyReducerApp/MyReducerApp";
 // import {CatsApp} from "./CatsApp/CatsApp";
 // import {DataFetchApp} from "./DataFetchApp/DataFetchApp";
@@ -43,8 +44,9 @@ ReactDOM.render(
         {/*<CatsApp/>*/}
         {/*<DataFetchApp/>*/}
         {/*<RenderPropsApp/>*/}
-        <ReactWindowExampleApp/>
+        {/*<ReactWindowExampleApp/>*/}
         {/*<VirtualizedListApp/>*/}
+        <FetchHookApp/>
     </div>,
     destination
 );
