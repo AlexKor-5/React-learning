@@ -2,8 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom";
 //CSS
 import "./index.css";
+import {MySample} from "./MySample/MySample";
 // import {FetchHookApp} from "./FetchHookApp/FetchHookApp";
-import {FetchComponentApp} from "./FetchComponentApp/FetchComponentApp";
+// import {FetchComponentApp} from "./FetchComponentApp/FetchComponentApp";
+// import {MultipleRequests} from "./MultipleRequests/MultipleRequests";
 // import {VirtualizedListApp} from "./VirtualizedListApp/VirtualizedListApp";
 // import {ReactWindowExampleApp} from "./VirtualizedListApp/ReactWindowExampleApp";
 // import {MyReducerApp} from "./MyReducerApp/MyReducerApp";
@@ -48,7 +50,9 @@ ReactDOM.render(
         {/*<ReactWindowExampleApp/>*/}
         {/*<VirtualizedListApp/>*/}
         {/*<FetchHookApp/>*/}
-        <FetchComponentApp/>
+        {/*<FetchComponentApp/>*/}
+        {/*<MultipleRequests/>*/}
+        <MySample/>
     </div>,
     destination
 );

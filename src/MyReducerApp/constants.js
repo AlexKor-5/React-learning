@@ -1,4 +1,1 @@
-export const constants = {
-    INCREASE: "INCREASE",
-    DECREASE: "DECREASE"
-}
+export const constants = { INCREASE: `INCREASE`, DECREASE: `DECREASE` };
